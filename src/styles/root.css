@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --EpiRegular: 'EpiRegular';
+    --EpiItalic: 'EpiItalic';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.container {
+    max-width: 75%;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.flexbox {
+    display: flex;
+    align-items: inherit;
+    justify-content: inherit;
+}
+
