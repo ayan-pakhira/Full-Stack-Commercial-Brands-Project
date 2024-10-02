@@ -32,10 +32,7 @@ img{
 }
 
 :root {
-  --EpiRegular: 'EpiRegular';
-  --EpiItalic: 'EpiItalic';
-  --Inter:'InterRegular'
-
+ 
 
 --EpiThin: 'Epilogue', sans-serif; /* 100 */
 --EpiExtraLight: 'Epilogue', sans-serif; /* 200 */
@@ -208,8 +205,118 @@ img {
 
 .filter-item {
   margin-bottom: 20px; /* Add space between filter items */
+
+    
 }
 
+.dropdown-button{
+  padding: 0 !important;
+  color: #00BDD6FF !important;
+}
+
+
+.dropdown-button-range{
+  width: 233px;
+  justify-content: space-between;
+  padding: 0 !important;
+  font-weight: 700;
+  background-color: white;
+  border: none;
+  color: #565E6CFF;
+  gap: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  border-bottom: 2px solid transparent;
+  margin-top: 20px;
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+  transition: 0.4s;
+
+  .dropdown-button {
+    background-color: white;
+    border: none;
+    color: #565E6CFF;
+    gap: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    padding: 10px;
+
+    align-items: center;
+    border-bottom: 2px solid transparent;
+
+    span {
+        line-height: 0;
+    }
+
+
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    list-style: none;
+    border-radius: 4px;
+    margin: 0;
+    padding: 5px;
+        color: #565E6CFF;
+        width: 200px;
+
+
+    .dropdown-menu li {
+        padding: 8px 16px;
+        cursor: pointer;
+    }
+
+    .dropdown-menu li:hover {
+        background-color: #f0f0f0;
+    }
+}
+input[type="checkbox"]:checked {
+    accent-color: #00BDD6FF; 
+  }
+
+  .dropdown-content{
+    padding: 15px 2px 0;
+    label{
+        font-size: 14px;
+        color: #565E6CFF;
+    }
+  }
+
+}
+
+
+.range-slider{
+  background: rgb(175, 242, 251) !important;
+}
+
+.range-slider .range-slider__range{
+  background: #00BDD6FF !important;
+}
+.range-slider .range-slider__thumb{
+  border:1px solid #00BDD6FF !important;
+  background: #fff !important;
+}
+
+.range{
+  background: #F3F4F6FF;
+  width: 80px;
+  border-radius: 4px;
+  padding: 5px;
+  display: flex;
+  gap: 3px;
+  align-items: center;
+}
 
 .rating-section {
   margin-top: 20px;

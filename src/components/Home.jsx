@@ -9,6 +9,7 @@ import girl from "../assets/image/G1.jpg";
 import arrow from "../assets/image/arrow.svg";
 import Footer from "../components/Footer";
 import Dropdown from "../components/Dropdown";
+import Checkboxdropdown from "../components/Checkboxdropdown.jsx"
 import search from "../assets/image/search.png";
 import "../App.css";
 import Header from "../components/Header";
@@ -77,6 +78,8 @@ function Home() {
         </div>
       </section>
 
+
+
       {/* <section>
                 <div className={styles.searchSection}>
                     <input
@@ -109,21 +112,50 @@ function Home() {
 
             </section> */}
 
-      
+
+
+
 
       <section>
-                <div className={styles.container}>
 
-                    <div className={styles.cardsStyle}>
-                        <Filter />
-                        <Product />
 
-                    </div>
+        <div className={styles.container}>
+          <div className={styles.cardsStyle}>
+            <Filter />
 
+            <div className={styles.innerwrapper}>
+              <div className={styles.inputwrapper} >
+                <img src={search} />
+                <input type="email" placeholder="Search Here..." />
+                <div className={styles.primarybtn}>Search</div>
+
+              </div>
+              <div className={`${styles.wrapCount} mt30 mb25 `}>
+                <p className={styles.text24}>Product Results<span>1001 products</span></p>
+                <div className={`${styles.flexbox} gap10`}>
+                 
+
+                  <label className={styles.text16} htmlFor="sort-by">
+                    Sort by
+                  </label>
+                
+                  <Dropdown name={'Last Updated'}  />
 
                 </div>
+              </div>
 
-            </section>
+
+              <Product />
+
+            </div>
+
+
+
+          </div>
+
+        </div>
+
+      </section>
 
       <Footer />
     </>

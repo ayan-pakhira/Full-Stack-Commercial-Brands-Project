@@ -1,21 +1,20 @@
 import React from "react";
 import "../App.css";
+import CustomRangeSlider from '../components/CustomRangeSlider.jsx'
 
 function Filter() {
   return (
     <div className="filter-section">
-      <h3>Filter</h3>
+      <div className="flexbox">
+            <p>Filters</p>
+            <a href="/" className='text14 bluetext'>Clear all</a>
+        </div>
 
       
       <div className="filter-item">
-        <label htmlFor="salary-range">Salary Range:</label>
-        <input
-          type="range"
-          id="salary-range"
-          name="salary-range"
-          min="0"
-          max="10000"
-        />
+        
+          <CustomRangeSlider name={'Salary Range'}/>
+        
       </div>
 
       

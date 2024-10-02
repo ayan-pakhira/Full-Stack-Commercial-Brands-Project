@@ -10,6 +10,9 @@ function Product() {
   return (
     
       <>
+
+      
+
     <div className={styles.productList}>
       {products.map((product) => (
           <div key={product.id} className={styles.productCard}>
